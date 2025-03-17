@@ -1,0 +1,41 @@
+{
+  "name": "agent-mint-fw",
+  "version": "1.0.0",
+  "description": "CLI framework for interacting with Solana blockchain data using agent-mint-sdk",
+  "main": "dist/index.js",
+  "bin": {
+    "agent-mint": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "pool": "ts-node src/index.ts pool",
+    "market": "ts-node src/index.ts market",
+    "holders": "ts-node src/index.ts holders",
+    "traders": "ts-node src/index.ts traders",
+    "trade": "ts-node src/index.ts trade",
+    "example": "ts-node src/examples/basic-usage.ts"
+  },
+  "keywords": [
+    "solana",
+    "blockchain",
+    "cli",
+    "agent-mint"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "agent-mint-io-sdk": "^1.0.0",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "inquirer": "^8.2.5"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^8.2.6",
+    "@types/node": "^20.11.19",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
